@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="facebook_app_id">277796405155426</string>
+    <string name="fb_login_protocol_scheme">fb277796405155426</string>
+    <string name="facebook_client_token">31a8384bf1bfb097c61e77b17df33cfa</string>
+    <string name="app_name">friend_clone_vandad</string>
+
+</resources>
