@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone/state/auth/providers/auth_state_provider.dart';
 import 'package:instagram_clone/state/auth/providers/is_logged_in_provider.dart';
+import 'package:instagram_clone/state/providers/is_loading_provider.dart';
 import 'package:instagram_clone/state/views/components/loading/loading_screen.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -43,6 +44,15 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       home: Consumer(builder: (context, ref, child) {
+        ref.listen(isLoadingProvider, (_, isLoading) {
+          if (isLoading) {
+            LoadingScreen.instance().show(
+              context: context,
+            );
+          } else {
+            LoadingScreen.instance().hide();
+          }
+        });
         final isLoggedIn = ref.watch(isLoggedInProvider);
         if (isLoggedIn) {
           return const MainView();
@@ -68,8 +78,7 @@ class MainView extends ConsumerWidget {
       ),
       body: TextButton(
         onPressed: () async {
-          LoadingScreen.instance().show(context: context);
-          // await ref.read(authStateProvider.notifier).logOut();
+          await ref.read(authStateProvider.notifier).logOut();
         },
         child: const Text(
           'Logout',
