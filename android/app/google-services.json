@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "288378422483-7hsgmkj9i5g6mattp0bcbavmresg8ko8.apps.googleusercontent.com",
+          "client_id": "288378422483-tor4m5rqpqh7hq7t40tgc8rc5kcdgjm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instagram_clone",
+            "certificate_hash": "52945ebeb4f54d64e7ddefabe7a86bd008b59dde"
+          }
+        },
+        {
+          "client_id": "288378422483-qn0fpkv67p5dj3jglvjgm1976ogvpekj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -29,6 +37,13 @@
             {
               "client_id": "288378422483-7hsgmkj9i5g6mattp0bcbavmresg8ko8.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "288378422483-jqg3flesqrvk13jeqqu60jjgu8s343v6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.instagramClone"
+              }
             }
           ]
         }
