@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/state/views/components/loading/loading_screen_controller.dart';
 
-import '../constants/strings.dart';
+import '../../constants/strings.dart';
 
 class LoadingScreen {
   LoadingScreen._sharedInstance();

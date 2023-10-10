@@ -4,6 +4,7 @@ import 'package:instagram_clone/state/auth/providers/auth_state_provider.dart';
 import 'package:instagram_clone/state/auth/providers/is_logged_in_provider.dart';
 import 'package:instagram_clone/state/providers/is_loading_provider.dart';
 import 'package:instagram_clone/state/views/components/loading/loading_screen.dart';
+import 'package:instagram_clone/state/views/login/login_view.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -88,49 +89,49 @@ class MainView extends ConsumerWidget {
   }
 }
 
-class LoginView extends StatelessWidget {
-  const LoginView({
-    super.key,
-  });
+// class LoginView extends StatelessWidget {
+//   const LoginView({
+//     super.key,
+//   });
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Center(
-          child: Text('Login View'),
-        ),
-      ),
-      body: Column(
-        children: [
-          Consumer(
-            builder: (context, ref, child) {
-              return TextButton(
-                onPressed: () async {
-                  await ref.watch(authStateProvider.notifier).loginWithGoogle();
-                },
-                child: const Text(
-                  'Sign in with Google',
-                ),
-              );
-            },
-          ),
-          Consumer(
-            builder: (context, ref, child) {
-              return TextButton(
-                onPressed: () async {
-                  await ref
-                      .watch(authStateProvider.notifier)
-                      .loginWithFacebook();
-                },
-                child: const Text(
-                  'Sign in with Facebook',
-                ),
-              );
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Center(
+//           child: Text('Login View'),
+//         ),
+//       ),
+//       body: Column(
+//         children: [
+//           Consumer(
+//             builder: (context, ref, child) {
+//               return TextButton(
+//                 onPressed: () async {
+//                   await ref.watch(authStateProvider.notifier).loginWithGoogle();
+//                 },
+//                 child: const Text(
+//                   'Sign in with Google',
+//                 ),
+//               );
+//             },
+//           ),
+//           Consumer(
+//             builder: (context, ref, child) {
+//               return TextButton(
+//                 onPressed: () async {
+//                   await ref
+//                       .watch(authStateProvider.notifier)
+//                       .loginWithFacebook();
+//                 },
+//                 child: const Text(
+//                   'Sign in with Facebook',
+//                 ),
+//               );
+//             },
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }

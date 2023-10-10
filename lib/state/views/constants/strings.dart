@@ -1,0 +1,54 @@
+import 'package:flutter/foundation.dart' show immutable;
+
+@immutable
+class Strings {
+  static const allowLikesTitle = 'Allow Likes';
+  static const allowLikesDescription =
+      'By allowing likes, users will be able to press the like button on your post.';
+  static const allowLikesStorageKey = 'allow_likes';
+  static const allowCommentsTitle = 'Allow Comments';
+  static const allowCommentsDescription =
+      'By allowing comments, users will be able to comment on your post.';
+  static const allowCommentsStorageKey = 'allow_comments';
+
+  static const comment = 'comment';
+  static const loading = 'Loading...';
+  static const person = 'person';
+  static const people = 'people';
+  static const likedThis = 'liked this';
+  static const delete = 'Delete';
+  static const areYouSureYouWantToDeleteThis =
+      'Are you sure you want to delete this?';
+
+  static const logOut = 'Log out';
+  static const areYouSureThatYouWantToLogOutOfTheApp =
+      'Are you sure that you want to log out of the app?';
+  static const cancel = 'Cancel';
+
+  static const appName = 'Instant-gram!';
+  static const welcomeToAppName = 'Welcome to ${Strings.appName}';
+  static const youHaveNoPosts =
+      'You have not made a post yet. Press either the video-upload or the photo-upload buttons to the top of the screen in order to upload your first post.';
+  static const noPostsAvailable =
+      'Nobody seems to have made any posts yet. Why don\'t you take the first step and upload your first post?!';
+  static const enterYourSearchTerm =
+      'Enter your search term in order to get started. You can search description of all posts availablein the system';
+
+  static const dontHaveAnAccount = 'Dont have an account?\n';
+  static const signUpOn = 'Signup on ';
+  static const orCreateAnAccountOn = ' or create an account on ';
+
+  static const facebook = 'Facebook';
+  static const facebookSignupUrl = 'https://www.facebook.com/signup';
+  static const google = 'Google';
+  static const googleSignupUrl = 'https://accounts.google.com/signup';
+  static const logIntoYourAccount =
+      'Log into your account using one of the options below.';
+  static const comments = "Comments";
+  static const writeYourCommentHere = "Write your comments here...";
+  static const checkOutThisPost = "Checkout this post";
+  static const postDetails = "Post Details";
+  static const post = "post";
+
+  const Strings._();
+}
