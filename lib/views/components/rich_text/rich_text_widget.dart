@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/widgets.dart';
-import 'package:instagram_clone/state/views/components/rich_text/base_text.dart';
+import 'package:instagram_clone/views/components/rich_text/base_text.dart';
 
 import 'link_text.dart';
 

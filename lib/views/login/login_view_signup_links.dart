@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:instagram_clone/state/views/components/rich_text/rich_text_widget.dart';
+import 'package:instagram_clone/views/components/rich_text/rich_text_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../constants/strings.dart';

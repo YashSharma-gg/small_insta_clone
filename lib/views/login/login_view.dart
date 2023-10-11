@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone/state/auth/providers/auth_state_provider.dart';
-import 'package:instagram_clone/state/views/constants/app_colors.dart';
-import 'package:instagram_clone/state/views/constants/strings.dart';
-import 'package:instagram_clone/state/views/login/divider_with_margins.dart';
-import 'package:instagram_clone/state/views/login/google_button.dart';
-import 'package:instagram_clone/state/views/login/login_view_signup_links.dart';
+import 'package:instagram_clone/views/constants/app_colors.dart';
+import 'package:instagram_clone/views/constants/strings.dart';
+import 'package:instagram_clone/views/login/divider_with_margins.dart';
+import 'package:instagram_clone/views/login/google_button.dart';
+import 'package:instagram_clone/views/login/login_view_signup_links.dart';
 
 import 'facebook_button.dart';
 

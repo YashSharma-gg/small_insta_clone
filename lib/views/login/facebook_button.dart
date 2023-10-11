@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:instagram_clone/state/views/constants/app_colors.dart';
-import 'package:instagram_clone/state/views/constants/strings.dart';
+import 'package:instagram_clone/views/constants/app_colors.dart';
+import 'package:instagram_clone/views/constants/strings.dart';
 
-class GoogleButton extends StatelessWidget {
-  const GoogleButton({super.key});
+class FacebookButton extends StatelessWidget {
+  const FacebookButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +14,13 @@ class GoogleButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FaIcon(
-            FontAwesomeIcons.google,
-            color: AppColors.googleColor,
+            FontAwesomeIcons.facebook,
+            color: AppColors.facebookColor,
           ),
           const SizedBox(
             width: 10,
           ),
-          const Text(Strings.google)
+          const Text(Strings.facebook)
         ],
       ),
     );
