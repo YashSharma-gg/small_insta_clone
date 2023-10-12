@@ -10,6 +10,8 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'dart:developer' as devtools show log;
 
+import 'views/main/main_view.dart';
+
 extension Log on Object {
   void log() => devtools.log(toString());
 }
@@ -65,29 +67,29 @@ class App extends StatelessWidget {
   }
 }
 
-// for when you are already logged in
-class MainView extends ConsumerWidget {
-  const MainView({super.key});
+// // for when you are already logged in
+// class MainView extends ConsumerWidget {
+//   const MainView({super.key});
 
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Center(
-          child: Text('Main View'),
-        ),
-      ),
-      body: TextButton(
-        onPressed: () async {
-          await ref.read(authStateProvider.notifier).logOut();
-        },
-        child: const Text(
-          'Logout',
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context, WidgetRef ref) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Center(
+//           child: Text('Main View'),
+//         ),
+//       ),
+//       body: TextButton(
+//         onPressed: () async {
+//           await ref.read(authStateProvider.notifier).logOut();
+//         },
+//         child: const Text(
+//           'Logout',
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 // class LoginView extends StatelessWidget {
 //   const LoginView({
